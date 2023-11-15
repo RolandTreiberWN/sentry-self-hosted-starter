@@ -1,0 +1,1444 @@
+▶ Parsing command line ...
+
+▶ Detecting Docker platform
+Detected Docker platform is linux/arm64
+
+▶ Initializing Docker Compose ...
+
+▶ Setting up error handling ...
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 339B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/debian:bullseye-slim
+#3 DONE 1.9s
+
+#4 [1/2] FROM docker.io/library/debian:bullseye-slim@sha256:19664a5752dddba7f59bb460410a0e1887af346e21877fa7cec78bfd3cb77da5
+#4 resolve docker.io/library/debian:bullseye-slim@sha256:19664a5752dddba7f59bb460410a0e1887af346e21877fa7cec78bfd3cb77da5 0.0s done
+#4 sha256:19664a5752dddba7f59bb460410a0e1887af346e21877fa7cec78bfd3cb77da5 1.85kB / 1.85kB done
+#4 sha256:d4abb4ad7066511f7585b575915f0cb054dcc588e7447f0493ef3025b7d31b19 529B / 529B done
+#4 sha256:3e056ab32d268d94c412c10d95e4a547aeb67e6fd011965ae261134ef7687d70 1.48kB / 1.48kB done
+#4 sha256:6e498137f0ed1053c364a5c8a688616b4abee72496a0b97cc71ea5e603565070 0B / 30.06MB 0.2s
+#4 sha256:6e498137f0ed1053c364a5c8a688616b4abee72496a0b97cc71ea5e603565070 2.10MB / 30.06MB 0.3s
+#4 sha256:6e498137f0ed1053c364a5c8a688616b4abee72496a0b97cc71ea5e603565070 7.34MB / 30.06MB 0.5s
+#4 sha256:6e498137f0ed1053c364a5c8a688616b4abee72496a0b97cc71ea5e603565070 9.44MB / 30.06MB 0.6s
+#4 sha256:6e498137f0ed1053c364a5c8a688616b4abee72496a0b97cc71ea5e603565070 12.58MB / 30.06MB 0.7s
+#4 sha256:6e498137f0ed1053c364a5c8a688616b4abee72496a0b97cc71ea5e603565070 15.73MB / 30.06MB 0.8s
+#4 sha256:6e498137f0ed1053c364a5c8a688616b4abee72496a0b97cc71ea5e603565070 18.87MB / 30.06MB 0.9s
+#4 sha256:6e498137f0ed1053c364a5c8a688616b4abee72496a0b97cc71ea5e603565070 22.02MB / 30.06MB 1.1s
+#4 sha256:6e498137f0ed1053c364a5c8a688616b4abee72496a0b97cc71ea5e603565070 25.17MB / 30.06MB 1.2s
+#4 sha256:6e498137f0ed1053c364a5c8a688616b4abee72496a0b97cc71ea5e603565070 30.06MB / 30.06MB 1.4s
+#4 sha256:6e498137f0ed1053c364a5c8a688616b4abee72496a0b97cc71ea5e603565070 30.06MB / 30.06MB 1.4s done
+#4 extracting sha256:6e498137f0ed1053c364a5c8a688616b4abee72496a0b97cc71ea5e603565070 0.1s
+#4 extracting sha256:6e498137f0ed1053c364a5c8a688616b4abee72496a0b97cc71ea5e603565070 0.9s done
+#4 DONE 2.4s
+
+#5 [2/2] RUN set -x   && apt-get update   && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends jq   && apt-get clean   && rm -rf /var/lib/apt/lists/*
+#5 0.085 + apt-get update
+#5 0.163 Get:1 http://deb.debian.org/debian bullseye InRelease [116 kB]
+#5 0.233 Get:2 http://deb.debian.org/debian-security bullseye-security InRelease [48.4 kB]
+#5 0.259 Get:3 http://deb.debian.org/debian bullseye-updates InRelease [44.1 kB]
+#5 0.283 Get:4 http://deb.debian.org/debian bullseye/main arm64 Packages [7951 kB]
+#5 1.076 Get:5 http://deb.debian.org/debian-security bullseye-security/main arm64 Packages [253 kB]
+#5 1.087 Get:6 http://deb.debian.org/debian bullseye-updates/main arm64 Packages [15.1 kB]
+#5 1.659 Fetched 8428 kB in 2s (5392 kB/s)
+#5 1.659 Reading package lists...
+#5 1.875 + DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends jq
+#5 1.880 Reading package lists...
+#5 2.090 Building dependency tree...
+#5 2.143 Reading state information...
+#5 2.198 The following additional packages will be installed:
+#5 2.198   libjq1 libonig5
+#5 2.220 The following NEW packages will be installed:
+#5 2.221   jq libjq1 libonig5
+#5 2.271 0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+#5 2.271 Need to get 361 kB of archives.
+#5 2.271 After this operation, 1117 kB of additional disk space will be used.
+#5 2.271 Get:1 http://deb.debian.org/debian bullseye/main arm64 libonig5 arm64 6.9.6-1.1 [176 kB]
+#5 2.350 Get:2 http://deb.debian.org/debian bullseye/main arm64 libjq1 arm64 1.6-2.1 [121 kB]
+#5 2.371 Get:3 http://deb.debian.org/debian bullseye/main arm64 jq arm64 1.6-2.1 [64.5 kB]
+#5 2.437 debconf: delaying package configuration, since apt-utils is not installed
+#5 2.447 Fetched 361 kB in 0s (2324 kB/s)
+#5 2.456 Selecting previously unselected package libonig5:arm64.
+#5 2.456 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6656 files and directories currently installed.)
+#5 2.458 Preparing to unpack .../libonig5_6.9.6-1.1_arm64.deb ...
+#5 2.461 Unpacking libonig5:arm64 (6.9.6-1.1) ...
+#5 2.482 Selecting previously unselected package libjq1:arm64.
+#5 2.483 Preparing to unpack .../libjq1_1.6-2.1_arm64.deb ...
+#5 2.484 Unpacking libjq1:arm64 (1.6-2.1) ...
+#5 2.498 Selecting previously unselected package jq.
+#5 2.499 Preparing to unpack .../archives/jq_1.6-2.1_arm64.deb ...
+#5 2.500 Unpacking jq (1.6-2.1) ...
+#5 2.514 Setting up libonig5:arm64 (6.9.6-1.1) ...
+#5 2.517 Setting up libjq1:arm64 (1.6-2.1) ...
+#5 2.520 Setting up jq (1.6-2.1) ...
+#5 2.524 Processing triggers for libc-bin (2.31-13+deb11u7) ...
+#5 2.535 + apt-get clean
+#5 2.537 + rm -rf /var/lib/apt/lists/auxfiles /var/lib/apt/lists/deb.debian.org_debian-security_dists_bullseye-security_InRelease /var/lib/apt/lists/deb.debian.org_debian-security_dists_bullseye-security_main_binary-arm64_Packages.lz4 /var/lib/apt/lists/deb.debian.org_debian_dists_bullseye-updates_InRelease /var/lib/apt/lists/deb.debian.org_debian_dists_bullseye-updates_main_binary-arm64_Packages.lz4 /var/lib/apt/lists/deb.debian.org_debian_dists_bullseye_InRelease /var/lib/apt/lists/deb.debian.org_debian_dists_bullseye_main_binary-arm64_Packages.lz4 /var/lib/apt/lists/lock /var/lib/apt/lists/partial
+#5 DONE 2.7s
+
+#6 exporting to image
+#6 exporting layers 0.0s done
+#6 writing image sha256:c57c7772f084960ad3d875be5d36e3689d2deffbe1a77831ec19df86001523d8 done
+#6 naming to docker.io/library/sentry-self-hosted-jq-local done
+#6 DONE 0.0s
+
+What's Next?
+  1. Sign in to your Docker account → docker login
+  2. View a summary of image vulnerabilities and recommendations → docker scout quickview
+
+Hey, so ... we would love to automatically find out about issues with your
+Sentry instance so that we can improve the product. Turns out there is an app
+for that, called Sentry. Would you be willing to let us automatically send data
+about your instance upstream to Sentry for development and debugging purposes?
+
+  y / yes / 1
+  n / no / 0
+
+(Btw, we send this to our own self-hosted Sentry instance, not to Sentry SaaS,
+so that we can be in this together.)
+
+Here's the info we may collect:
+
+  - OS username
+  - IP address
+  - install log
+  - runtime errors
+  - performance data
+
+Thirty (30) day retention. No marketing. Privacy policy at sentry.io/privacy.
+
+y or n? 
+Understood. To avoid this prompt in the future, use one of these flags:
+
+  --report-self-hosted-issues
+  --no-report-self-hosted-issues
+
+or set the REPORT_SELF_HOSTED_ISSUES environment variable:
+
+  REPORT_SELF_HOSTED_ISSUES=1 to send data
+  REPORT_SELF_HOSTED_ISSUES=0 to not send data
+
+
+▶ Checking for latest commit ... 
+skipped
+
+▶ Checking minimum requirements ...
+Found Docker version 24.0.6
+Found Docker Compose version 2.23.0-desktop.1
+Unable to find image 'busybox:latest' locally
+latest: Pulling from library/busybox
+8a0af25e8c2e: Pulling fs layer
+8a0af25e8c2e: Download complete
+8a0af25e8c2e: Pull complete
+Digest: sha256:3fbc632167424a6d997e74f52b878d7cc478225cffac6bc977eedfe51c7f4e79
+Status: Downloaded newer image for busybox:latest
+
+▶ Turning things off ...
+
+▶ Creating volumes for persistent storage ...
+Created sentry-clickhouse.
+Created sentry-data.
+Created sentry-kafka.
+Created sentry-postgres.
+Created sentry-redis.
+Created sentry-symbolicator.
+Created sentry-zookeeper.
+
+▶ Ensuring files from examples ...
+sentry/sentry.conf.py already exists, skipped creation.
+sentry/config.yml already exists, skipped creation.
+symbolicator/config.yml already exists, skipped creation.
+
+▶ Ensuring Relay credentials ...
+relay/config.yml already exists, skipped creation.
+relay/credentials.json already exists, skipped creation.
+
+▶ Generating secret key ...
+
+▶ Fetching and updating Docker images ...
+23.10.1: Pulling from getsentry/sentry
+f03b40093957: Pulling fs layer
+05c2151a829c: Pulling fs layer
+e69cf89f7464: Pulling fs layer
+dc8674bf3449: Pulling fs layer
+49a24f45fbd0: Pulling fs layer
+54d1b171b1e7: Pulling fs layer
+3eb0e177709a: Pulling fs layer
+fbf6e909caf6: Pulling fs layer
+314b40f0c74f: Pulling fs layer
+6a7d33cdeb97: Pulling fs layer
+ca5d4034bf5c: Pulling fs layer
+a72d55318c19: Pulling fs layer
+74c822ce7f22: Pulling fs layer
+83b0c9a17766: Pulling fs layer
+32aeeeba6fb9: Pulling fs layer
+a72d55318c19: Waiting
+74c822ce7f22: Waiting
+83b0c9a17766: Waiting
+32aeeeba6fb9: Waiting
+dc8674bf3449: Waiting
+49a24f45fbd0: Waiting
+54d1b171b1e7: Waiting
+fbf6e909caf6: Waiting
+3eb0e177709a: Waiting
+314b40f0c74f: Waiting
+ca5d4034bf5c: Waiting
+6a7d33cdeb97: Waiting
+05c2151a829c: Verifying Checksum
+05c2151a829c: Download complete
+dc8674bf3449: Verifying Checksum
+dc8674bf3449: Download complete
+e69cf89f7464: Verifying Checksum
+e69cf89f7464: Download complete
+f03b40093957: Verifying Checksum
+f03b40093957: Download complete
+54d1b171b1e7: Verifying Checksum
+54d1b171b1e7: Download complete
+49a24f45fbd0: Verifying Checksum
+49a24f45fbd0: Download complete
+3eb0e177709a: Verifying Checksum
+3eb0e177709a: Download complete
+fbf6e909caf6: Verifying Checksum
+fbf6e909caf6: Download complete
+f03b40093957: Pull complete
+05c2151a829c: Pull complete
+e69cf89f7464: Pull complete
+dc8674bf3449: Pull complete
+49a24f45fbd0: Pull complete
+54d1b171b1e7: Pull complete
+3eb0e177709a: Pull complete
+fbf6e909caf6: Pull complete
+ca5d4034bf5c: Verifying Checksum
+ca5d4034bf5c: Download complete
+a72d55318c19: Verifying Checksum
+a72d55318c19: Download complete
+74c822ce7f22: Verifying Checksum
+74c822ce7f22: Download complete
+83b0c9a17766: Verifying Checksum
+83b0c9a17766: Download complete
+6a7d33cdeb97: Verifying Checksum
+6a7d33cdeb97: Download complete
+32aeeeba6fb9: Download complete
+314b40f0c74f: Verifying Checksum
+314b40f0c74f: Download complete
+314b40f0c74f: Pull complete
+6a7d33cdeb97: Pull complete
+ca5d4034bf5c: Pull complete
+a72d55318c19: Pull complete
+74c822ce7f22: Pull complete
+83b0c9a17766: Pull complete
+32aeeeba6fb9: Pull complete
+Digest: sha256:4d0b4901edfaa32438287b7b2a95e82d88b98aeb76ffc3d5e169a5ae26f7bfc7
+Status: Downloaded newer image for getsentry/sentry:23.10.1
+docker.io/getsentry/sentry:23.10.1
+
+What's Next?
+  1. Sign in to your Docker account → docker login
+  2. View a summary of image vulnerabilities and recommendations → docker scout quickview getsentry/sentry:23.10.1
+
+▶ Building and tagging Docker images ...
+
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [web internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [web internal] load build definition from Dockerfile
+#2 transferring dockerfile: 510B done
+#2 DONE 0.0s
+
+#3 [web internal] load metadata for docker.io/getsentry/sentry:23.10.1
+#3 DONE 1.3s
+
+#4 [web internal] load build context
+#4 transferring context: 33.96kB 0.0s done
+#4 DONE 0.0s
+
+#5 [web 1/4] FROM docker.io/getsentry/sentry:23.10.1@sha256:4d0b4901edfaa32438287b7b2a95e82d88b98aeb76ffc3d5e169a5ae26f7bfc7
+#5 resolve docker.io/getsentry/sentry:23.10.1@sha256:4d0b4901edfaa32438287b7b2a95e82d88b98aeb76ffc3d5e169a5ae26f7bfc7 done
+#5 DONE 0.1s
+
+#6 [web 2/4] COPY . /usr/src/sentry
+#6 DONE 1.5s
+
+#7 [web 3/4] RUN if [ -s /usr/src/sentry/enhance-image.sh ]; then     /usr/src/sentry/enhance-image.sh; fi
+#7 DONE 0.2s
+
+#8 [web 4/4] RUN if [ -s /usr/src/sentry/requirements.txt ]; then     echo "sentry/requirements.txt is deprecated, use sentry/enhance-image.sh - see https://github.com/getsentry/self-hosted#enhance-sentry-image";     pip install -r /usr/src/sentry/requirements.txt; fi
+#8 DONE 0.3s
+
+#9 [web] exporting to image
+#9 exporting layers 0.0s done
+#9 writing image sha256:ba48d2e25321e5cc05b9dc5757c830c0bcfc6cbaeaa965160662c7a1a4514d24 done
+#9 naming to docker.io/library/sentry-self-hosted-local done
+#9 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [clickhouse internal] load build definition from Dockerfile
+#1 transferring dockerfile: 118B done
+#1 DONE 0.0s
+
+#2 [clickhouse internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [clickhouse internal] load metadata for docker.io/altinity/clickhouse-server:21.6.1.6734-testing-arm
+#3 DONE 1.5s
+
+#4 [clickhouse 1/1] FROM docker.io/altinity/clickhouse-server:21.6.1.6734-testing-arm@sha256:9a4516444fef9e0f11ee6b2de716d3b97b36bf05d9cc2d44c4596cfb0584dea6
+#4 resolve docker.io/altinity/clickhouse-server:21.6.1.6734-testing-arm@sha256:9a4516444fef9e0f11ee6b2de716d3b97b36bf05d9cc2d44c4596cfb0584dea6 done
+#4 sha256:9a4516444fef9e0f11ee6b2de716d3b97b36bf05d9cc2d44c4596cfb0584dea6 2.20kB / 2.20kB done
+#4 sha256:4613c0e98b40c5cc04e4c71e47637123ed78745200527bb3a12bb7a191417eda 10.62kB / 10.62kB done
+#4 sha256:80bc30679ac1fd798f3241208c14accd6a364cb8a6224d1127dfb1577d10554f 0B / 27.14MB 0.1s
+#4 sha256:9bf18fab4cfbf479fa9f8409ad47e2702c63241304c2cdd4c33f2a1633c5f85e 0B / 850B 0.1s
+#4 sha256:5979309c983a2adeff352538937475cf961d49c34194fa2aab142effe19ed9c1 0B / 189B 0.1s
+#4 sha256:80bc30679ac1fd798f3241208c14accd6a364cb8a6224d1127dfb1577d10554f 4.19MB / 27.14MB 0.4s
+#4 sha256:80bc30679ac1fd798f3241208c14accd6a364cb8a6224d1127dfb1577d10554f 8.39MB / 27.14MB 0.5s
+#4 sha256:80bc30679ac1fd798f3241208c14accd6a364cb8a6224d1127dfb1577d10554f 16.78MB / 27.14MB 0.8s
+#4 sha256:9bf18fab4cfbf479fa9f8409ad47e2702c63241304c2cdd4c33f2a1633c5f85e 850B / 850B 0.8s done
+#4 sha256:5979309c983a2adeff352538937475cf961d49c34194fa2aab142effe19ed9c1 189B / 189B 0.6s done
+#4 sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd 0B / 478.35MB 0.8s
+#4 sha256:4355e54f3dcc7f4d1b436cd0ff0249c00965d669188907892159bfd8b051521e 0B / 863.47kB 0.9s
+#4 sha256:80bc30679ac1fd798f3241208c14accd6a364cb8a6224d1127dfb1577d10554f 20.97MB / 27.14MB 1.0s
+#4 sha256:80bc30679ac1fd798f3241208c14accd6a364cb8a6224d1127dfb1577d10554f 27.14MB / 27.14MB 1.2s done
+#4 sha256:c8706efe3e978f18d75238d7ec01db9d92a5212dc1d5bcfda6dd79fd246aebca 0B / 149B 1.2s
+#4 extracting sha256:80bc30679ac1fd798f3241208c14accd6a364cb8a6224d1127dfb1577d10554f 0.1s
+#4 sha256:4355e54f3dcc7f4d1b436cd0ff0249c00965d669188907892159bfd8b051521e 863.47kB / 863.47kB 1.3s done
+#4 sha256:9fc4409d6bfbec739fdc8453926e1766f3af7a563b3bad867130266ede019e8a 0B / 364B 1.4s
+#4 sha256:a2e34557e26ccbe9d82608e111b5290ddd46e4212378c2d7e23ab3a0a327948e 0B / 2.16kB 1.5s
+#4 sha256:9fc4409d6bfbec739fdc8453926e1766f3af7a563b3bad867130266ede019e8a 364B / 364B 1.6s done
+#4 extracting sha256:80bc30679ac1fd798f3241208c14accd6a364cb8a6224d1127dfb1577d10554f 0.6s done
+#4 extracting sha256:9bf18fab4cfbf479fa9f8409ad47e2702c63241304c2cdd4c33f2a1633c5f85e done
+#4 extracting sha256:5979309c983a2adeff352538937475cf961d49c34194fa2aab142effe19ed9c1 done
+#4 sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd 27.26MB / 478.35MB 2.2s
+#4 sha256:a2e34557e26ccbe9d82608e111b5290ddd46e4212378c2d7e23ab3a0a327948e 2.16kB / 2.16kB 2.3s done
+#4 sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd 51.38MB / 478.35MB 3.2s
+#4 sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd 76.55MB / 478.35MB 4.0s
+#4 sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd 100.66MB / 478.35MB 4.8s
+#4 sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd 126.88MB / 478.35MB 5.9s
+#4 sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd 152.04MB / 478.35MB 7.3s
+#4 sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd 177.21MB / 478.35MB 8.2s
+#4 sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd 205.52MB / 478.35MB 9.0s
+#4 sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd 231.74MB / 478.35MB 9.8s
+#4 sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd 255.85MB / 478.35MB 10.6s
+#4 sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd 282.07MB / 478.35MB 11.4s
+#4 sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd 312.48MB / 478.35MB 12.4s
+#4 sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd 342.88MB / 478.35MB 13.4s
+#4 sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd 369.10MB / 478.35MB 14.4s
+#4 sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd 395.31MB / 478.35MB 15.6s
+#4 sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd 422.58MB / 478.35MB 16.5s
+#4 sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd 446.69MB / 478.35MB 17.5s
+#4 sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd 470.81MB / 478.35MB 18.4s
+#4 sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd 478.35MB / 478.35MB 18.7s done
+#4 extracting sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd
+#4 extracting sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd 5.1s
+#4 extracting sha256:089e57bca418e0b3706393df9c9764f72cb7078b220ca2713816ed9e41ddf1bd 9.3s done
+#4 extracting sha256:4355e54f3dcc7f4d1b436cd0ff0249c00965d669188907892159bfd8b051521e 0.0s done
+#4 extracting sha256:c8706efe3e978f18d75238d7ec01db9d92a5212dc1d5bcfda6dd79fd246aebca done
+#4 extracting sha256:9fc4409d6bfbec739fdc8453926e1766f3af7a563b3bad867130266ede019e8a done
+#4 extracting sha256:a2e34557e26ccbe9d82608e111b5290ddd46e4212378c2d7e23ab3a0a327948e done
+#4 DONE 29.3s
+
+#5 [clickhouse] exporting to image
+#5 exporting layers done
+#5 writing image sha256:e45daadb5bfc2fcc20f1d6ab1e6be273182e4e9ab36704c76afaeae27fafb098 done
+#5 naming to docker.io/library/clickhouse-self-hosted-local done
+#5 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [attachments-consumer internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [attachments-consumer internal] load build definition from Dockerfile
+#2 transferring dockerfile: 510B done
+#2 DONE 0.0s
+
+#3 [attachments-consumer internal] load metadata for docker.io/getsentry/sentry:23.10.1
+#3 DONE 0.4s
+
+#4 [attachments-consumer 1/4] FROM docker.io/getsentry/sentry:23.10.1@sha256:4d0b4901edfaa32438287b7b2a95e82d88b98aeb76ffc3d5e169a5ae26f7bfc7
+#4 DONE 0.0s
+
+#5 [attachments-consumer internal] load build context
+#5 transferring context: 900B done
+#5 DONE 0.0s
+
+#6 [attachments-consumer 3/4] RUN if [ -s /usr/src/sentry/enhance-image.sh ]; then     /usr/src/sentry/enhance-image.sh; fi
+#6 CACHED
+
+#7 [attachments-consumer 2/4] COPY . /usr/src/sentry
+#7 CACHED
+
+#8 [attachments-consumer 4/4] RUN if [ -s /usr/src/sentry/requirements.txt ]; then     echo "sentry/requirements.txt is deprecated, use sentry/enhance-image.sh - see https://github.com/getsentry/self-hosted#enhance-sentry-image";     pip install -r /usr/src/sentry/requirements.txt; fi
+#8 CACHED
+
+#9 [attachments-consumer] exporting to image
+#9 exporting layers done
+#9 writing image sha256:8ca2107d2cf92d28cc411d81b45adf847922fde5d855c085105f7a38767bf654 done
+#9 naming to docker.io/library/sentry-self-hosted-local done
+#9 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [billing-metrics-consumer internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [billing-metrics-consumer internal] load build definition from Dockerfile
+#2 transferring dockerfile: 510B done
+#2 DONE 0.0s
+
+#3 [billing-metrics-consumer internal] load metadata for docker.io/getsentry/sentry:23.10.1
+#3 DONE 0.2s
+
+#4 [billing-metrics-consumer 1/4] FROM docker.io/getsentry/sentry:23.10.1@sha256:4d0b4901edfaa32438287b7b2a95e82d88b98aeb76ffc3d5e169a5ae26f7bfc7
+#4 DONE 0.0s
+
+#5 [billing-metrics-consumer internal] load build context
+#5 transferring context: 900B done
+#5 DONE 0.0s
+
+#6 [billing-metrics-consumer 2/4] COPY . /usr/src/sentry
+#6 CACHED
+
+#7 [billing-metrics-consumer 3/4] RUN if [ -s /usr/src/sentry/enhance-image.sh ]; then     /usr/src/sentry/enhance-image.sh; fi
+#7 CACHED
+
+#8 [billing-metrics-consumer 4/4] RUN if [ -s /usr/src/sentry/requirements.txt ]; then     echo "sentry/requirements.txt is deprecated, use sentry/enhance-image.sh - see https://github.com/getsentry/self-hosted#enhance-sentry-image";     pip install -r /usr/src/sentry/requirements.txt; fi
+#8 CACHED
+
+#9 [billing-metrics-consumer] exporting to image
+#9 exporting layers done
+#9 writing image sha256:6a633fea1600d6706e139c4de27d50675b47433ba32205ad755bc4a47afc113d done
+#9 naming to docker.io/library/sentry-self-hosted-local done
+#9 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [cron internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [cron internal] load build definition from Dockerfile
+#2 transferring dockerfile: 510B done
+#2 DONE 0.0s
+
+#3 [cron internal] load metadata for docker.io/getsentry/sentry:23.10.1
+#3 DONE 0.2s
+
+#4 [cron 1/4] FROM docker.io/getsentry/sentry:23.10.1@sha256:4d0b4901edfaa32438287b7b2a95e82d88b98aeb76ffc3d5e169a5ae26f7bfc7
+#4 DONE 0.0s
+
+#5 [cron internal] load build context
+#5 transferring context: 900B done
+#5 DONE 0.0s
+
+#6 [cron 2/4] COPY . /usr/src/sentry
+#6 CACHED
+
+#7 [cron 3/4] RUN if [ -s /usr/src/sentry/enhance-image.sh ]; then     /usr/src/sentry/enhance-image.sh; fi
+#7 CACHED
+
+#8 [cron 4/4] RUN if [ -s /usr/src/sentry/requirements.txt ]; then     echo "sentry/requirements.txt is deprecated, use sentry/enhance-image.sh - see https://github.com/getsentry/self-hosted#enhance-sentry-image";     pip install -r /usr/src/sentry/requirements.txt; fi
+#8 CACHED
+
+#9 [cron] exporting to image
+#9 exporting layers done
+#9 writing image sha256:f2c25b479d5cad1e8548dd50f57eca40c7af7f1f0d5ed7cca2b2c287bad99349 done
+#9 naming to docker.io/library/sentry-self-hosted-local done
+#9 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [events-consumer internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [events-consumer internal] load build definition from Dockerfile
+#2 transferring dockerfile: 510B done
+#2 DONE 0.0s
+
+#3 [events-consumer internal] load metadata for docker.io/getsentry/sentry:23.10.1
+#3 DONE 0.2s
+
+#4 [events-consumer 1/4] FROM docker.io/getsentry/sentry:23.10.1@sha256:4d0b4901edfaa32438287b7b2a95e82d88b98aeb76ffc3d5e169a5ae26f7bfc7
+#4 DONE 0.0s
+
+#5 [events-consumer internal] load build context
+#5 transferring context: 900B done
+#5 DONE 0.0s
+
+#6 [events-consumer 2/4] COPY . /usr/src/sentry
+#6 CACHED
+
+#7 [events-consumer 3/4] RUN if [ -s /usr/src/sentry/enhance-image.sh ]; then     /usr/src/sentry/enhance-image.sh; fi
+#7 CACHED
+
+#8 [events-consumer 4/4] RUN if [ -s /usr/src/sentry/requirements.txt ]; then     echo "sentry/requirements.txt is deprecated, use sentry/enhance-image.sh - see https://github.com/getsentry/self-hosted#enhance-sentry-image";     pip install -r /usr/src/sentry/requirements.txt; fi
+#8 CACHED
+
+#9 [events-consumer] exporting to image
+#9 exporting layers done
+#9 writing image sha256:c3f5e01d77ccffb886ba0241f75ac9c099d9863764f529bf6ab4497e9bfba0dc done
+#9 naming to docker.io/library/sentry-self-hosted-local done
+#9 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [generic-metrics-consumer internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [generic-metrics-consumer internal] load build definition from Dockerfile
+#2 transferring dockerfile: 510B done
+#2 DONE 0.0s
+
+#3 [generic-metrics-consumer internal] load metadata for docker.io/getsentry/sentry:23.10.1
+#3 DONE 0.2s
+
+#4 [generic-metrics-consumer 1/4] FROM docker.io/getsentry/sentry:23.10.1@sha256:4d0b4901edfaa32438287b7b2a95e82d88b98aeb76ffc3d5e169a5ae26f7bfc7
+#4 DONE 0.0s
+
+#5 [generic-metrics-consumer internal] load build context
+#5 transferring context: 900B done
+#5 DONE 0.0s
+
+#6 [generic-metrics-consumer 2/4] COPY . /usr/src/sentry
+#6 CACHED
+
+#7 [generic-metrics-consumer 3/4] RUN if [ -s /usr/src/sentry/enhance-image.sh ]; then     /usr/src/sentry/enhance-image.sh; fi
+#7 CACHED
+
+#8 [generic-metrics-consumer 4/4] RUN if [ -s /usr/src/sentry/requirements.txt ]; then     echo "sentry/requirements.txt is deprecated, use sentry/enhance-image.sh - see https://github.com/getsentry/self-hosted#enhance-sentry-image";     pip install -r /usr/src/sentry/requirements.txt; fi
+#8 CACHED
+
+#9 [generic-metrics-consumer] exporting to image
+#9 exporting layers done
+#9 writing image sha256:1c78e2483318819123c18d8ec1b30d3e58a86fc56dcde5b479ad222773b32db4 done
+#9 naming to docker.io/library/sentry-self-hosted-local done
+#9 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [ingest-occurrences internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [ingest-occurrences internal] load build definition from Dockerfile
+#2 transferring dockerfile: 510B done
+#2 DONE 0.0s
+
+#3 [ingest-occurrences internal] load metadata for docker.io/getsentry/sentry:23.10.1
+#3 DONE 0.2s
+
+#4 [ingest-occurrences 1/4] FROM docker.io/getsentry/sentry:23.10.1@sha256:4d0b4901edfaa32438287b7b2a95e82d88b98aeb76ffc3d5e169a5ae26f7bfc7
+#4 DONE 0.0s
+
+#5 [ingest-occurrences internal] load build context
+#5 transferring context: 900B done
+#5 DONE 0.0s
+
+#6 [ingest-occurrences 2/4] COPY . /usr/src/sentry
+#6 CACHED
+
+#7 [ingest-occurrences 3/4] RUN if [ -s /usr/src/sentry/enhance-image.sh ]; then     /usr/src/sentry/enhance-image.sh; fi
+#7 CACHED
+
+#8 [ingest-occurrences 4/4] RUN if [ -s /usr/src/sentry/requirements.txt ]; then     echo "sentry/requirements.txt is deprecated, use sentry/enhance-image.sh - see https://github.com/getsentry/self-hosted#enhance-sentry-image";     pip install -r /usr/src/sentry/requirements.txt; fi
+#8 CACHED
+
+#9 [ingest-occurrences] exporting to image
+#9 exporting layers done
+#9 writing image sha256:a89913c956b9086f19ff0e6bb2a843edb7d93fe0c542dfa54cd75970585911f0 done
+#9 naming to docker.io/library/sentry-self-hosted-local done
+#9 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [ingest-profiles internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [ingest-profiles internal] load build definition from Dockerfile
+#2 transferring dockerfile: 510B done
+#2 DONE 0.0s
+
+#3 [ingest-profiles internal] load metadata for docker.io/getsentry/sentry:23.10.1
+#3 DONE 0.2s
+
+#4 [ingest-profiles 1/4] FROM docker.io/getsentry/sentry:23.10.1@sha256:4d0b4901edfaa32438287b7b2a95e82d88b98aeb76ffc3d5e169a5ae26f7bfc7
+#4 DONE 0.0s
+
+#5 [ingest-profiles internal] load build context
+#5 transferring context: 900B done
+#5 DONE 0.0s
+
+#6 [ingest-profiles 2/4] COPY . /usr/src/sentry
+#6 CACHED
+
+#7 [ingest-profiles 3/4] RUN if [ -s /usr/src/sentry/enhance-image.sh ]; then     /usr/src/sentry/enhance-image.sh; fi
+#7 CACHED
+
+#8 [ingest-profiles 4/4] RUN if [ -s /usr/src/sentry/requirements.txt ]; then     echo "sentry/requirements.txt is deprecated, use sentry/enhance-image.sh - see https://github.com/getsentry/self-hosted#enhance-sentry-image";     pip install -r /usr/src/sentry/requirements.txt; fi
+#8 CACHED
+
+#9 [ingest-profiles] exporting to image
+#9 exporting layers done
+#9 writing image sha256:910f6c0474dec309136da10052c6431f8fda5021998103e19a9dcb4285bacf2f done
+#9 naming to docker.io/library/sentry-self-hosted-local done
+#9 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [ingest-replay-recordings internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [ingest-replay-recordings internal] load build definition from Dockerfile
+#2 transferring dockerfile: 510B done
+#2 DONE 0.0s
+
+#3 [ingest-replay-recordings internal] load metadata for docker.io/getsentry/sentry:23.10.1
+#3 DONE 0.2s
+
+#4 [ingest-replay-recordings 1/4] FROM docker.io/getsentry/sentry:23.10.1@sha256:4d0b4901edfaa32438287b7b2a95e82d88b98aeb76ffc3d5e169a5ae26f7bfc7
+#4 DONE 0.0s
+
+#5 [ingest-replay-recordings internal] load build context
+#5 transferring context: 900B done
+#5 DONE 0.0s
+
+#6 [ingest-replay-recordings 2/4] COPY . /usr/src/sentry
+#6 CACHED
+
+#7 [ingest-replay-recordings 3/4] RUN if [ -s /usr/src/sentry/enhance-image.sh ]; then     /usr/src/sentry/enhance-image.sh; fi
+#7 CACHED
+
+#8 [ingest-replay-recordings 4/4] RUN if [ -s /usr/src/sentry/requirements.txt ]; then     echo "sentry/requirements.txt is deprecated, use sentry/enhance-image.sh - see https://github.com/getsentry/self-hosted#enhance-sentry-image";     pip install -r /usr/src/sentry/requirements.txt; fi
+#8 CACHED
+
+#9 [ingest-replay-recordings] exporting to image
+#9 exporting layers done
+#9 writing image sha256:3054ab531c0dc9881bc8b670125d917ed3f0328ba7edc69d631f970899b60736 done
+#9 naming to docker.io/library/sentry-self-hosted-local done
+#9 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [metrics-consumer internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [metrics-consumer internal] load build definition from Dockerfile
+#2 transferring dockerfile: 510B done
+#2 DONE 0.0s
+
+#3 [metrics-consumer internal] load metadata for docker.io/getsentry/sentry:23.10.1
+#3 DONE 0.2s
+
+#4 [metrics-consumer 1/4] FROM docker.io/getsentry/sentry:23.10.1@sha256:4d0b4901edfaa32438287b7b2a95e82d88b98aeb76ffc3d5e169a5ae26f7bfc7
+#4 DONE 0.0s
+
+#5 [metrics-consumer internal] load build context
+#5 transferring context: 900B done
+#5 DONE 0.0s
+
+#6 [metrics-consumer 2/4] COPY . /usr/src/sentry
+#6 CACHED
+
+#7 [metrics-consumer 3/4] RUN if [ -s /usr/src/sentry/enhance-image.sh ]; then     /usr/src/sentry/enhance-image.sh; fi
+#7 CACHED
+
+#8 [metrics-consumer 4/4] RUN if [ -s /usr/src/sentry/requirements.txt ]; then     echo "sentry/requirements.txt is deprecated, use sentry/enhance-image.sh - see https://github.com/getsentry/self-hosted#enhance-sentry-image";     pip install -r /usr/src/sentry/requirements.txt; fi
+#8 CACHED
+
+#9 [metrics-consumer] exporting to image
+#9 exporting layers done
+#9 writing image sha256:c19d54405b80b79158d5b1d15013a7cf0fa01aa4283d415c42d5e14274027d98 done
+#9 naming to docker.io/library/sentry-self-hosted-local done
+#9 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [web internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [web internal] load build definition from Dockerfile
+#2 transferring dockerfile: 510B done
+#2 DONE 0.0s
+
+#3 [web internal] load metadata for docker.io/getsentry/sentry:23.10.1
+#3 DONE 0.2s
+
+#4 [web 1/4] FROM docker.io/getsentry/sentry:23.10.1@sha256:4d0b4901edfaa32438287b7b2a95e82d88b98aeb76ffc3d5e169a5ae26f7bfc7
+#4 DONE 0.0s
+
+#5 [web internal] load build context
+#5 transferring context: 900B done
+#5 DONE 0.0s
+
+#6 [web 2/4] COPY . /usr/src/sentry
+#6 CACHED
+
+#7 [web 3/4] RUN if [ -s /usr/src/sentry/enhance-image.sh ]; then     /usr/src/sentry/enhance-image.sh; fi
+#7 CACHED
+
+#8 [web 4/4] RUN if [ -s /usr/src/sentry/requirements.txt ]; then     echo "sentry/requirements.txt is deprecated, use sentry/enhance-image.sh - see https://github.com/getsentry/self-hosted#enhance-sentry-image";     pip install -r /usr/src/sentry/requirements.txt; fi
+#8 CACHED
+
+#9 [web] exporting to image
+#9 exporting layers done
+#9 writing image sha256:ba48d2e25321e5cc05b9dc5757c830c0bcfc6cbaeaa965160662c7a1a4514d24 done
+#9 naming to docker.io/library/sentry-self-hosted-local done
+#9 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [post-process-forwarder-errors internal] load build definition from Dockerfile
+#1 transferring dockerfile: 510B done
+#1 DONE 0.0s
+
+#2 [post-process-forwarder-errors internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [post-process-forwarder-errors internal] load metadata for docker.io/getsentry/sentry:23.10.1
+#3 DONE 0.2s
+
+#4 [post-process-forwarder-errors 1/4] FROM docker.io/getsentry/sentry:23.10.1@sha256:4d0b4901edfaa32438287b7b2a95e82d88b98aeb76ffc3d5e169a5ae26f7bfc7
+#4 DONE 0.0s
+
+#5 [post-process-forwarder-errors internal] load build context
+#5 transferring context: 900B done
+#5 DONE 0.0s
+
+#6 [post-process-forwarder-errors 2/4] COPY . /usr/src/sentry
+#6 CACHED
+
+#7 [post-process-forwarder-errors 3/4] RUN if [ -s /usr/src/sentry/enhance-image.sh ]; then     /usr/src/sentry/enhance-image.sh; fi
+#7 CACHED
+
+#8 [post-process-forwarder-errors 4/4] RUN if [ -s /usr/src/sentry/requirements.txt ]; then     echo "sentry/requirements.txt is deprecated, use sentry/enhance-image.sh - see https://github.com/getsentry/self-hosted#enhance-sentry-image";     pip install -r /usr/src/sentry/requirements.txt; fi
+#8 CACHED
+
+#9 [post-process-forwarder-errors] exporting to image
+#9 exporting layers done
+#9 writing image sha256:4a33767131e06914212f615481fd1217f49fd727614a33fd6dd0b1b92453e708 done
+#9 naming to docker.io/library/sentry-self-hosted-local done
+#9 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [post-process-forwarder-issue-platform internal] load build definition from Dockerfile
+#1 transferring dockerfile: 510B done
+#1 DONE 0.2s
+
+#2 [post-process-forwarder-issue-platform internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.2s
+
+#3 [post-process-forwarder-issue-platform internal] load metadata for docker.io/getsentry/sentry:23.10.1
+#3 DONE 0.7s
+
+#4 [post-process-forwarder-issue-platform 1/4] FROM docker.io/getsentry/sentry:23.10.1@sha256:4d0b4901edfaa32438287b7b2a95e82d88b98aeb76ffc3d5e169a5ae26f7bfc7
+#4 DONE 0.0s
+
+#5 [post-process-forwarder-issue-platform internal] load build context
+#5 transferring context: 900B done
+#5 DONE 0.0s
+
+#6 [post-process-forwarder-issue-platform 3/4] RUN if [ -s /usr/src/sentry/enhance-image.sh ]; then     /usr/src/sentry/enhance-image.sh; fi
+#6 CACHED
+
+#7 [post-process-forwarder-issue-platform 2/4] COPY . /usr/src/sentry
+#7 CACHED
+
+#8 [post-process-forwarder-issue-platform 4/4] RUN if [ -s /usr/src/sentry/requirements.txt ]; then     echo "sentry/requirements.txt is deprecated, use sentry/enhance-image.sh - see https://github.com/getsentry/self-hosted#enhance-sentry-image";     pip install -r /usr/src/sentry/requirements.txt; fi
+#8 CACHED
+
+#9 [post-process-forwarder-issue-platform] exporting to image
+#9 exporting layers done
+#9 writing image sha256:dd27f6af1bcd807530383f4b40ba5e2da072c792c680af62d773b2c11404254a done
+#9 naming to docker.io/library/sentry-self-hosted-local done
+#9 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [post-process-forwarder-transactions internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.8s
+
+#2 [post-process-forwarder-transactions internal] load build definition from Dockerfile
+#2 transferring dockerfile: 510B done
+#2 DONE 0.8s
+
+#3 [post-process-forwarder-transactions internal] load metadata for docker.io/getsentry/sentry:23.10.1
+#3 DONE 0.3s
+
+#4 [post-process-forwarder-transactions 1/4] FROM docker.io/getsentry/sentry:23.10.1@sha256:4d0b4901edfaa32438287b7b2a95e82d88b98aeb76ffc3d5e169a5ae26f7bfc7
+#4 DONE 0.0s
+
+#5 [post-process-forwarder-transactions internal] load build context
+#5 transferring context: 900B done
+#5 DONE 0.0s
+
+#6 [post-process-forwarder-transactions 2/4] COPY . /usr/src/sentry
+#6 CACHED
+
+#7 [post-process-forwarder-transactions 3/4] RUN if [ -s /usr/src/sentry/enhance-image.sh ]; then     /usr/src/sentry/enhance-image.sh; fi
+#7 CACHED
+
+#8 [post-process-forwarder-transactions 4/4] RUN if [ -s /usr/src/sentry/requirements.txt ]; then     echo "sentry/requirements.txt is deprecated, use sentry/enhance-image.sh - see https://github.com/getsentry/self-hosted#enhance-sentry-image";     pip install -r /usr/src/sentry/requirements.txt; fi
+#8 CACHED
+
+#9 [post-process-forwarder-transactions] exporting to image
+#9 exporting layers done
+#9 writing image sha256:c37f598ef9449f758ff4c0c1075bacfe2ff199ce0867a669d40e9793d584f6aa done
+#9 naming to docker.io/library/sentry-self-hosted-local done
+#9 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [sentry-cleanup internal] load build definition from Dockerfile
+#1 transferring dockerfile: 516B done
+#1 DONE 0.0s
+
+#2 [sentry-cleanup internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [sentry-cleanup internal] load metadata for docker.io/library/sentry-self-hosted-local:latest
+#3 DONE 0.0s
+
+#4 [sentry-cleanup internal] load build context
+#4 transferring context: 705B done
+#4 DONE 0.0s
+
+#5 [sentry-cleanup 1/5] FROM docker.io/library/sentry-self-hosted-local
+#5 DONE 0.1s
+
+#6 [sentry-cleanup 2/5] RUN if [ -z "${http_proxy}" ]; then echo "Acquire::http::proxy "${http_proxy}";" >> /etc/apt/apt.conf; fi
+#6 DONE 0.2s
+
+#7 [sentry-cleanup 3/5] RUN if [ -z "${https_proxy}" ]; then echo "Acquire::https::proxy "${https_proxy}";" >> /etc/apt/apt.conf; fi
+#7 DONE 0.2s
+
+#8 [sentry-cleanup 4/5] RUN apt-get update && apt-get install -y --no-install-recommends cron &&     rm -r /var/lib/apt/lists/*
+#8 0.519 Get:1 http://deb.debian.org/debian bullseye InRelease [116 kB]
+#8 0.591 Get:2 http://deb.debian.org/debian-security bullseye-security InRelease [48.4 kB]
+#8 0.598 Get:3 http://deb.debian.org/debian bullseye-updates InRelease [44.1 kB]
+#8 2.188 Get:4 http://deb.debian.org/debian bullseye/main amd64 Packages [8062 kB]
+#8 3.871 Get:5 http://deb.debian.org/debian-security bullseye-security/main amd64 Packages [258 kB]
+#8 6.387 Get:6 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [17.7 kB]
+#8 6.442 Fetched 8546 kB in 6s (1413 kB/s)
+#8 6.442 Reading package lists...
+#8 7.198 Reading package lists...
+#8 7.854 Building dependency tree...
+#8 8.000 Reading state information...
+#8 8.133 The following additional packages will be installed:
+#8 8.134   sensible-utils
+#8 8.137 Suggested packages:
+#8 8.137   anacron logrotate checksecurity
+#8 8.137 Recommended packages:
+#8 8.137   default-mta | mail-transport-agent
+#8 8.213 The following NEW packages will be installed:
+#8 8.213   cron sensible-utils
+#8 8.323 0 upgraded, 2 newly installed, 0 to remove and 16 not upgraded.
+#8 8.323 Need to get 114 kB of archives.
+#8 8.323 After this operation, 314 kB of additional disk space will be used.
+#8 8.323 Get:1 http://deb.debian.org/debian bullseye/main amd64 sensible-utils all 0.0.14 [14.8 kB]
+#8 8.345 Get:2 http://deb.debian.org/debian bullseye/main amd64 cron amd64 3.0pl1-137 [99.6 kB]
+#8 8.787 debconf: delaying package configuration, since apt-utils is not installed
+#8 8.899 Fetched 114 kB in 0s (633 kB/s)
+#8 9.224 Selecting previously unselected package sensible-utils.
+#8 9.224 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7034 files and directories currently installed.)
+#8 9.231 Preparing to unpack .../sensible-utils_0.0.14_all.deb ...
+#8 9.235 Unpacking sensible-utils (0.0.14) ...
+#8 9.356 Selecting previously unselected package cron.
+#8 9.357 Preparing to unpack .../cron_3.0pl1-137_amd64.deb ...
+#8 9.360 Unpacking cron (3.0pl1-137) ...
+#8 9.458 Setting up sensible-utils (0.0.14) ...
+#8 9.464 Setting up cron (3.0pl1-137) ...
+#8 9.643 Adding group `crontab' (GID 101) ...
+#8 9.688 Done.
+#8 9.892 invoke-rc.d: could not determine current runlevel
+#8 9.942 invoke-rc.d: policy-rc.d denied execution of start.
+#8 DONE 10.4s
+
+#9 [sentry-cleanup 5/5] COPY entrypoint.sh /entrypoint.sh
+#9 DONE 0.0s
+
+#10 [sentry-cleanup] exporting to image
+#10 exporting layers 0.0s done
+#10 writing image sha256:9c0744eb22b0530d140fe594c95e892699fa47a07fc6a2e4abf0322f22ea31de done
+#10 naming to docker.io/library/sentry-cleanup-self-hosted-local done
+#10 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [subscription-consumer-events internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [subscription-consumer-events internal] load build definition from Dockerfile
+#2 transferring dockerfile: 510B done
+#2 DONE 0.0s
+
+#3 [subscription-consumer-events internal] load metadata for docker.io/getsentry/sentry:23.10.1
+#3 DONE 0.5s
+
+#4 [subscription-consumer-events 1/4] FROM docker.io/getsentry/sentry:23.10.1@sha256:4d0b4901edfaa32438287b7b2a95e82d88b98aeb76ffc3d5e169a5ae26f7bfc7
+#4 DONE 0.0s
+
+#5 [subscription-consumer-events internal] load build context
+#5 transferring context: 900B done
+#5 DONE 0.0s
+
+#6 [subscription-consumer-events 2/4] COPY . /usr/src/sentry
+#6 CACHED
+
+#7 [subscription-consumer-events 3/4] RUN if [ -s /usr/src/sentry/enhance-image.sh ]; then     /usr/src/sentry/enhance-image.sh; fi
+#7 CACHED
+
+#8 [subscription-consumer-events 4/4] RUN if [ -s /usr/src/sentry/requirements.txt ]; then     echo "sentry/requirements.txt is deprecated, use sentry/enhance-image.sh - see https://github.com/getsentry/self-hosted#enhance-sentry-image";     pip install -r /usr/src/sentry/requirements.txt; fi
+#8 CACHED
+
+#9 [subscription-consumer-events] exporting to image
+#9 exporting layers done
+#9 writing image sha256:1a37355165a808da3687c9744843a1039244a31e03985711e6cfe0240c526d6d done
+#9 naming to docker.io/library/sentry-self-hosted-local done
+#9 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [subscription-consumer-generic-metrics internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [subscription-consumer-generic-metrics internal] load build definition from Dockerfile
+#2 transferring dockerfile: 510B done
+#2 DONE 0.0s
+
+#3 [subscription-consumer-generic-metrics internal] load metadata for docker.io/getsentry/sentry:23.10.1
+#3 DONE 0.2s
+
+#4 [subscription-consumer-generic-metrics 1/4] FROM docker.io/getsentry/sentry:23.10.1@sha256:4d0b4901edfaa32438287b7b2a95e82d88b98aeb76ffc3d5e169a5ae26f7bfc7
+#4 DONE 0.0s
+
+#5 [subscription-consumer-generic-metrics internal] load build context
+#5 transferring context: 900B done
+#5 DONE 0.0s
+
+#6 [subscription-consumer-generic-metrics 3/4] RUN if [ -s /usr/src/sentry/enhance-image.sh ]; then     /usr/src/sentry/enhance-image.sh; fi
+#6 CACHED
+
+#7 [subscription-consumer-generic-metrics 2/4] COPY . /usr/src/sentry
+#7 CACHED
+
+#8 [subscription-consumer-generic-metrics 4/4] RUN if [ -s /usr/src/sentry/requirements.txt ]; then     echo "sentry/requirements.txt is deprecated, use sentry/enhance-image.sh - see https://github.com/getsentry/self-hosted#enhance-sentry-image";     pip install -r /usr/src/sentry/requirements.txt; fi
+#8 CACHED
+
+#9 [subscription-consumer-generic-metrics] exporting to image
+#9 exporting layers done
+#9 writing image sha256:413acf68cd453eac5ded4a235c47b07e1a7f229fdaccf39e992c60ba5b2b3113 done
+#9 naming to docker.io/library/sentry-self-hosted-local done
+#9 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [subscription-consumer-metrics internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [subscription-consumer-metrics internal] load build definition from Dockerfile
+#2 transferring dockerfile: 510B done
+#2 DONE 0.0s
+
+#3 [subscription-consumer-metrics internal] load metadata for docker.io/getsentry/sentry:23.10.1
+#3 DONE 0.2s
+
+#4 [subscription-consumer-metrics 1/4] FROM docker.io/getsentry/sentry:23.10.1@sha256:4d0b4901edfaa32438287b7b2a95e82d88b98aeb76ffc3d5e169a5ae26f7bfc7
+#4 DONE 0.0s
+
+#5 [subscription-consumer-metrics internal] load build context
+#5 transferring context: 900B done
+#5 DONE 0.0s
+
+#6 [subscription-consumer-metrics 2/4] COPY . /usr/src/sentry
+#6 CACHED
+
+#7 [subscription-consumer-metrics 3/4] RUN if [ -s /usr/src/sentry/enhance-image.sh ]; then     /usr/src/sentry/enhance-image.sh; fi
+#7 CACHED
+
+#8 [subscription-consumer-metrics 4/4] RUN if [ -s /usr/src/sentry/requirements.txt ]; then     echo "sentry/requirements.txt is deprecated, use sentry/enhance-image.sh - see https://github.com/getsentry/self-hosted#enhance-sentry-image";     pip install -r /usr/src/sentry/requirements.txt; fi
+#8 CACHED
+
+#9 [subscription-consumer-metrics] exporting to image
+#9 exporting layers done
+#9 writing image sha256:6907c634a10665e2d87eb4b9fb006fbce81d7575a923bf4261eed1e9ba824c61 done
+#9 naming to docker.io/library/sentry-self-hosted-local done
+#9 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [subscription-consumer-transactions internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [subscription-consumer-transactions internal] load build definition from Dockerfile
+#2 transferring dockerfile: 510B done
+#2 DONE 0.0s
+
+#3 [subscription-consumer-transactions internal] load metadata for docker.io/getsentry/sentry:23.10.1
+#3 DONE 0.2s
+
+#4 [subscription-consumer-transactions 1/4] FROM docker.io/getsentry/sentry:23.10.1@sha256:4d0b4901edfaa32438287b7b2a95e82d88b98aeb76ffc3d5e169a5ae26f7bfc7
+#4 DONE 0.0s
+
+#5 [subscription-consumer-transactions internal] load build context
+#5 transferring context: 900B done
+#5 DONE 0.0s
+
+#6 [subscription-consumer-transactions 2/4] COPY . /usr/src/sentry
+#6 CACHED
+
+#7 [subscription-consumer-transactions 3/4] RUN if [ -s /usr/src/sentry/enhance-image.sh ]; then     /usr/src/sentry/enhance-image.sh; fi
+#7 CACHED
+
+#8 [subscription-consumer-transactions 4/4] RUN if [ -s /usr/src/sentry/requirements.txt ]; then     echo "sentry/requirements.txt is deprecated, use sentry/enhance-image.sh - see https://github.com/getsentry/self-hosted#enhance-sentry-image";     pip install -r /usr/src/sentry/requirements.txt; fi
+#8 CACHED
+
+#9 [subscription-consumer-transactions] exporting to image
+#9 exporting layers done
+#9 writing image sha256:4956ba29217b444f43bc9dc12cf63a7db45be2ff868d8e38cb6d337e4320ddf5 done
+#9 naming to docker.io/library/sentry-self-hosted-local done
+#9 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [symbolicator-cleanup internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [symbolicator-cleanup internal] load build definition from Dockerfile
+#2 transferring dockerfile: 516B done
+#2 DONE 0.0s
+
+#3 [symbolicator-cleanup internal] load metadata for docker.io/getsentry/symbolicator:23.10.1
+#3 DONE 1.5s
+
+#4 [symbolicator-cleanup internal] load build context
+#4 transferring context: 82B done
+#4 DONE 0.0s
+
+#5 [symbolicator-cleanup 1/5] FROM docker.io/getsentry/symbolicator:23.10.1@sha256:14ffe043df4d3eec2c34c31d3cf2be562f73c0b6cc21a51d8c7ddd78298f94ab
+#5 resolve docker.io/getsentry/symbolicator:23.10.1@sha256:14ffe043df4d3eec2c34c31d3cf2be562f73c0b6cc21a51d8c7ddd78298f94ab done
+#5 DONE 0.0s
+
+#6 [symbolicator-cleanup 2/5] RUN if [ -z "${http_proxy}" ]; then echo "Acquire::http::proxy "${http_proxy}";" >> /etc/apt/apt.conf; fi
+#6 DONE 1.1s
+
+#7 [symbolicator-cleanup 3/5] RUN if [ -z "${https_proxy}" ]; then echo "Acquire::https::proxy "${https_proxy}";" >> /etc/apt/apt.conf; fi
+#7 DONE 0.5s
+
+#8 [symbolicator-cleanup 4/5] RUN apt-get update && apt-get install -y --no-install-recommends cron &&     rm -r /var/lib/apt/lists/*
+#8 0.744 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+#8 0.930 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [52.1 kB]
+#8 0.931 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+#8 1.855 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8780 kB]
+#8 2.788 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6668 B]
+#8 4.004 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [101 kB]
+#8 4.931 Fetched 9139 kB in 4s (2124 kB/s)
+#8 4.931 Reading package lists...
+#8 6.017 Reading package lists...
+#8 7.326 Building dependency tree...
+#8 7.515 Reading state information...
+#8 8.332 The following additional packages will be installed:
+#8 8.342   cron-daemon-common sensible-utils
+#8 8.357 Suggested packages:
+#8 8.357   anacron logrotate checksecurity
+#8 8.357 Recommended packages:
+#8 8.358   default-mta | mail-transport-agent
+#8 8.476 The following NEW packages will be installed:
+#8 8.477   cron cron-daemon-common sensible-utils
+#8 8.650 0 upgraded, 3 newly installed, 0 to remove and 2 not upgraded.
+#8 8.650 Need to get 105 kB of archives.
+#8 8.650 After this operation, 325 kB of additional disk space will be used.
+#8 8.650 Get:1 http://deb.debian.org/debian bookworm/main amd64 cron-daemon-common all 3.0pl1-162 [12.7 kB]
+#8 8.716 Get:2 http://deb.debian.org/debian bookworm/main amd64 sensible-utils all 0.0.17+nmu1 [19.0 kB]
+#8 8.732 Get:3 http://deb.debian.org/debian bookworm/main amd64 cron amd64 3.0pl1-162 [73.1 kB]
+#8 9.242 debconf: delaying package configuration, since apt-utils is not installed
+#8 9.345 Fetched 105 kB in 0s (390 kB/s)
+#8 9.537 Selecting previously unselected package cron-daemon-common.
+#8 9.537 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6736 files and directories currently installed.)
+#8 9.547 Preparing to unpack .../cron-daemon-common_3.0pl1-162_all.deb ...
+#8 9.552 Unpacking cron-daemon-common (3.0pl1-162) ...
+#8 9.759 Selecting previously unselected package sensible-utils.
+#8 9.760 Preparing to unpack .../sensible-utils_0.0.17+nmu1_all.deb ...
+#8 9.763 Unpacking sensible-utils (0.0.17+nmu1) ...
+#8 9.865 Setting up cron-daemon-common (3.0pl1-162) ...
+#8 10.06 Adding group `crontab' (GID 101) ...
+#8 10.10 Done.
+#8 10.24 Selecting previously unselected package cron.
+#8 10.24 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6781 files and directories currently installed.)
+#8 10.25 Preparing to unpack .../cron_3.0pl1-162_amd64.deb ...
+#8 10.27 Unpacking cron (3.0pl1-162) ...
+#8 10.36 Setting up sensible-utils (0.0.17+nmu1) ...
+#8 10.37 Setting up cron (3.0pl1-162) ...
+#8 10.56 invoke-rc.d: could not determine current runlevel
+#8 10.61 invoke-rc.d: policy-rc.d denied execution of start.
+#8 DONE 11.1s
+
+#9 [symbolicator-cleanup 5/5] COPY entrypoint.sh /entrypoint.sh
+#9 DONE 0.0s
+
+#10 [symbolicator-cleanup] exporting to image
+#10 exporting layers 0.0s done
+#10 writing image sha256:e109f029892a05a5ce2bfa2e6c2b97f619f95ad74fe554c53bb04c708d922a64 done
+#10 naming to docker.io/library/symbolicator-cleanup-self-hosted-local done
+#10 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [transactions-consumer internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [transactions-consumer internal] load build definition from Dockerfile
+#2 transferring dockerfile: 510B done
+#2 DONE 0.0s
+
+#3 [transactions-consumer internal] load metadata for docker.io/getsentry/sentry:23.10.1
+#3 DONE 0.4s
+
+#4 [transactions-consumer 1/4] FROM docker.io/getsentry/sentry:23.10.1@sha256:4d0b4901edfaa32438287b7b2a95e82d88b98aeb76ffc3d5e169a5ae26f7bfc7
+#4 DONE 0.0s
+
+#5 [transactions-consumer internal] load build context
+#5 transferring context: 900B done
+#5 DONE 0.0s
+
+#6 [transactions-consumer 2/4] COPY . /usr/src/sentry
+#6 CACHED
+
+#7 [transactions-consumer 3/4] RUN if [ -s /usr/src/sentry/enhance-image.sh ]; then     /usr/src/sentry/enhance-image.sh; fi
+#7 CACHED
+
+#8 [transactions-consumer 4/4] RUN if [ -s /usr/src/sentry/requirements.txt ]; then     echo "sentry/requirements.txt is deprecated, use sentry/enhance-image.sh - see https://github.com/getsentry/self-hosted#enhance-sentry-image";     pip install -r /usr/src/sentry/requirements.txt; fi
+#8 CACHED
+
+#9 [transactions-consumer] exporting to image
+#9 exporting layers done
+#9 writing image sha256:d60a0e287b7570ef039bdacf717f9f34812bddc37bf71d30eca0b69713b0abd3 done
+#9 naming to docker.io/library/sentry-self-hosted-local done
+#9 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [vroom-cleanup internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [vroom-cleanup internal] load build definition from Dockerfile
+#2 transferring dockerfile: 516B done
+#2 DONE 0.0s
+
+#3 [vroom-cleanup internal] load metadata for docker.io/getsentry/vroom:23.10.1
+#3 DONE 1.2s
+
+#4 [vroom-cleanup internal] load build context
+#4 transferring context: 82B done
+#4 DONE 0.0s
+
+#5 [vroom-cleanup 1/5] FROM docker.io/getsentry/vroom:23.10.1@sha256:b7ed0d50dc5b950a1c44c6956b679a0c85a97a8c9dc3d095acb98ac6b8f107fa
+#5 resolve docker.io/getsentry/vroom:23.10.1@sha256:b7ed0d50dc5b950a1c44c6956b679a0c85a97a8c9dc3d095acb98ac6b8f107fa done
+#5 DONE 0.0s
+
+#6 [vroom-cleanup 2/5] RUN if [ -z "${http_proxy}" ]; then echo "Acquire::http::proxy "${http_proxy}";" >> /etc/apt/apt.conf; fi
+#6 DONE 0.1s
+
+#7 [vroom-cleanup 3/5] RUN if [ -z "${https_proxy}" ]; then echo "Acquire::https::proxy "${https_proxy}";" >> /etc/apt/apt.conf; fi
+#7 DONE 0.2s
+
+#8 [vroom-cleanup 4/5] RUN apt-get update && apt-get install -y --no-install-recommends cron &&     rm -r /var/lib/apt/lists/*
+#8 0.423 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+#8 0.499 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [52.1 kB]
+#8 0.507 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+#8 0.942 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8780 kB]
+#8 1.618 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6668 B]
+#8 1.778 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [101 kB]
+#8 2.603 Fetched 9139 kB in 2s (4106 kB/s)
+#8 2.603 Reading package lists...
+#8 3.505 Reading package lists...
+#8 4.064 Building dependency tree...
+#8 4.199 Reading state information...
+#8 4.471 The following additional packages will be installed:
+#8 4.472   cron-daemon-common sensible-utils
+#8 4.474 Suggested packages:
+#8 4.474   anacron logrotate checksecurity
+#8 4.474 Recommended packages:
+#8 4.474   default-mta | mail-transport-agent
+#8 4.595 The following NEW packages will be installed:
+#8 4.597   cron cron-daemon-common sensible-utils
+#8 4.760 0 upgraded, 3 newly installed, 0 to remove and 2 not upgraded.
+#8 4.760 Need to get 105 kB of archives.
+#8 4.760 After this operation, 325 kB of additional disk space will be used.
+#8 4.760 Get:1 http://deb.debian.org/debian bookworm/main amd64 cron-daemon-common all 3.0pl1-162 [12.7 kB]
+#8 4.782 Get:2 http://deb.debian.org/debian bookworm/main amd64 sensible-utils all 0.0.17+nmu1 [19.0 kB]
+#8 4.789 Get:3 http://deb.debian.org/debian bookworm/main amd64 cron amd64 3.0pl1-162 [73.1 kB]
+#8 5.178 debconf: delaying package configuration, since apt-utils is not installed
+#8 5.236 Fetched 105 kB in 0s (522 kB/s)
+#8 5.317 Selecting previously unselected package cron-daemon-common.
+#8 5.318 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6586 files and directories currently installed.)
+#8 5.339 Preparing to unpack .../cron-daemon-common_3.0pl1-162_all.deb ...
+#8 5.342 Unpacking cron-daemon-common (3.0pl1-162) ...
+#8 5.452 Selecting previously unselected package sensible-utils.
+#8 5.452 Preparing to unpack .../sensible-utils_0.0.17+nmu1_all.deb ...
+#8 5.454 Unpacking sensible-utils (0.0.17+nmu1) ...
+#8 5.532 Setting up cron-daemon-common (3.0pl1-162) ...
+#8 5.680 Adding group `crontab' (GID 101) ...
+#8 5.726 Done.
+#8 5.838 Selecting previously unselected package cron.
+#8 5.839 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6631 files and directories currently installed.)
+#8 5.843 Preparing to unpack .../cron_3.0pl1-162_amd64.deb ...
+#8 5.860 Unpacking cron (3.0pl1-162) ...
+#8 5.944 Setting up sensible-utils (0.0.17+nmu1) ...
+#8 5.949 Setting up cron (3.0pl1-162) ...
+#8 6.111 invoke-rc.d: could not determine current runlevel
+#8 6.167 invoke-rc.d: policy-rc.d denied execution of start.
+#8 DONE 6.6s
+
+#9 [vroom-cleanup 5/5] COPY entrypoint.sh /entrypoint.sh
+#9 DONE 0.0s
+
+#10 [vroom-cleanup] exporting to image
+#10 exporting layers 0.0s done
+#10 writing image sha256:975de6ca5bdc86a90fb6af4c8bbfbf5b7ed953c21f573ed154c0fe38380d75a2 done
+#10 naming to docker.io/library/vroom-cleanup-self-hosted-local done
+#10 DONE 0.0s
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [worker internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [worker internal] load build definition from Dockerfile
+#2 transferring dockerfile: 510B done
+#2 DONE 0.0s
+
+#3 [worker internal] load metadata for docker.io/getsentry/sentry:23.10.1
+#3 DONE 0.4s
+
+#4 [worker 1/4] FROM docker.io/getsentry/sentry:23.10.1@sha256:4d0b4901edfaa32438287b7b2a95e82d88b98aeb76ffc3d5e169a5ae26f7bfc7
+#4 DONE 0.0s
+
+#5 [worker internal] load build context
+#5 transferring context: 900B done
+#5 DONE 0.0s
+
+#6 [worker 3/4] RUN if [ -s /usr/src/sentry/enhance-image.sh ]; then     /usr/src/sentry/enhance-image.sh; fi
+#6 CACHED
+
+#7 [worker 2/4] COPY . /usr/src/sentry
+#7 CACHED
+
+#8 [worker 4/4] RUN if [ -s /usr/src/sentry/requirements.txt ]; then     echo "sentry/requirements.txt is deprecated, use sentry/enhance-image.sh - see https://github.com/getsentry/self-hosted#enhance-sentry-image";     pip install -r /usr/src/sentry/requirements.txt; fi
+#8 CACHED
+
+#9 [worker] exporting to image
+#9 exporting layers done
+#9 writing image sha256:8c8476698f33ae3b0027a193c6056012817e566ff8a5e642b9619287a68585d0 done
+#9 naming to docker.io/library/sentry-self-hosted-local done
+#9 DONE 0.0s
+
+Docker images built.
+
+▶ Downloading and installing wal2json ...
+
+▶ Bootstrapping and migrating Snuba ...
+ Network sentry  Creating
+ Network sentry  Created
+ Container sentry-self-hosted-clickhouse-1  Creating
+ Container sentry-self-hosted-redis-1  Creating
+ Container sentry-self-hosted-zookeeper-1  Creating
+ zookeeper The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested 
+ Container sentry-self-hosted-zookeeper-1  Created
+ Container sentry-self-hosted-redis-1  Created
+ Container sentry-self-hosted-clickhouse-1  Created
+ Container sentry-self-hosted-kafka-1  Creating
+ kafka The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested 
+ Container sentry-self-hosted-kafka-1  Created
+ Container sentry-self-hosted-clickhouse-1  Starting
+ Container sentry-self-hosted-redis-1  Starting
+ Container sentry-self-hosted-zookeeper-1  Starting
+ Container sentry-self-hosted-redis-1  Started
+ Container sentry-self-hosted-clickhouse-1  Started
+ Container sentry-self-hosted-zookeeper-1  Started
+ Container sentry-self-hosted-zookeeper-1  Waiting
+ Container sentry-self-hosted-zookeeper-1  Healthy
+ Container sentry-self-hosted-kafka-1  Starting
+ Container sentry-self-hosted-kafka-1  Started
+2023-11-15 12:19:38,716 Initializing Snuba...
+2023-11-15 12:19:42,460 Snuba initialization took 3.744614292998449s
+2023-11-15 12:19:42,900 Initializing Snuba...
+2023-11-15 12:19:45,447 Snuba initialization took 2.548643793001247s
+2023-11-15 12:19:45,448 Attempting to connect to Kafka (attempt 0)...
+2023-11-15 12:19:45,521 Connected to Kafka on attempt 0
+2023-11-15 12:19:45,522 Creating Kafka topics...
+ Container sentry-self-hosted-redis-1  Running
+ Container sentry-self-hosted-zookeeper-1  Running
+ Container sentry-self-hosted-clickhouse-1  Running
+ Container sentry-self-hosted-kafka-1  Running
+ Container sentry-self-hosted-zookeeper-1  Waiting
+ Container sentry-self-hosted-zookeeper-1  Healthy
+2023-11-15 12:19:47,649 Initializing Snuba...
+2023-11-15 12:19:50,220 Snuba initialization took 2.572790251004335s
+2023-11-15 12:19:50,756 Initializing Snuba...
+2023-11-15 12:19:55,459 Snuba initialization took 4.703444669001328s
+Finished running migrations
+
+▶ Creating additional Kafka topics ...
+
+▶ Ensuring proper PostgreSQL version ...
+
+▶ Setting up / migrating database ...
+ Container sentry-self-hosted-smtp-1  Creating
+ Container sentry-self-hosted-symbolicator-1  Creating
+ Container sentry-self-hosted-postgres-1  Creating
+ Container sentry-self-hosted-memcached-1  Creating
+ Container sentry-self-hosted-zookeeper-1  Running
+ Container sentry-self-hosted-redis-1  Running
+ Container sentry-self-hosted-clickhouse-1  Running
+ Container sentry-self-hosted-kafka-1  Running
+ Container sentry-self-hosted-snuba-subscription-consumer-events-1  Creating
+ Container sentry-self-hosted-snuba-subscription-consumer-transactions-1  Creating
+ Container sentry-self-hosted-snuba-transactions-consumer-1  Creating
+ Container sentry-self-hosted-snuba-replacer-1  Creating
+ Container sentry-self-hosted-snuba-outcomes-consumer-1  Creating
+ Container sentry-self-hosted-vroom-1  Creating
+ Container sentry-self-hosted-snuba-sessions-consumer-1  Creating
+ Container sentry-self-hosted-snuba-consumer-1  Creating
+ Container sentry-self-hosted-snuba-api-1  Creating
+ snuba-transactions-consumer The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested 
+ Container sentry-self-hosted-snuba-transactions-consumer-1  Created
+ Container sentry-self-hosted-memcached-1  Created
+ snuba-subscription-consumer-transactions The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested 
+ snuba-sessions-consumer The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested 
+ symbolicator The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested 
+ snuba-api The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested 
+ Container sentry-self-hosted-smtp-1  Created
+ snuba-subscription-consumer-events The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested 
+ snuba-consumer The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested 
+ snuba-replacer The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested 
+ snuba-outcomes-consumer The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested 
+ vroom The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested 
+ Container sentry-self-hosted-postgres-1  Created
+ Container sentry-self-hosted-snuba-api-1  Created
+ Container sentry-self-hosted-symbolicator-1  Created
+ Container sentry-self-hosted-snuba-sessions-consumer-1  Created
+ Container sentry-self-hosted-snuba-subscription-consumer-transactions-1  Created
+ Container sentry-self-hosted-snuba-consumer-1  Created
+ Container sentry-self-hosted-snuba-subscription-consumer-events-1  Created
+ Container sentry-self-hosted-snuba-replacer-1  Created
+ Container sentry-self-hosted-vroom-1  Created
+ Container sentry-self-hosted-snuba-outcomes-consumer-1  Created
+ Container sentry-self-hosted-symbolicator-1  Starting
+ Container sentry-self-hosted-postgres-1  Starting
+ Container sentry-self-hosted-memcached-1  Starting
+ Container sentry-self-hosted-zookeeper-1  Waiting
+ Container sentry-self-hosted-smtp-1  Starting
+ Container sentry-self-hosted-memcached-1  Started
+ Container sentry-self-hosted-zookeeper-1  Healthy
+ Container sentry-self-hosted-redis-1  Waiting
+ Container sentry-self-hosted-clickhouse-1  Waiting
+ Container sentry-self-hosted-kafka-1  Waiting
+ Container sentry-self-hosted-redis-1  Waiting
+ Container sentry-self-hosted-redis-1  Waiting
+ Container sentry-self-hosted-clickhouse-1  Waiting
+ Container sentry-self-hosted-clickhouse-1  Waiting
+ Container sentry-self-hosted-kafka-1  Waiting
+ Container sentry-self-hosted-clickhouse-1  Waiting
+ Container sentry-self-hosted-kafka-1  Waiting
+ Container sentry-self-hosted-kafka-1  Waiting
+ Container sentry-self-hosted-clickhouse-1  Waiting
+ Container sentry-self-hosted-kafka-1  Waiting
+ Container sentry-self-hosted-kafka-1  Waiting
+ Container sentry-self-hosted-redis-1  Waiting
+ Container sentry-self-hosted-redis-1  Waiting
+ Container sentry-self-hosted-clickhouse-1  Waiting
+ Container sentry-self-hosted-clickhouse-1  Waiting
+ Container sentry-self-hosted-kafka-1  Waiting
+ Container sentry-self-hosted-kafka-1  Waiting
+ Container sentry-self-hosted-redis-1  Waiting
+ Container sentry-self-hosted-kafka-1  Waiting
+ Container sentry-self-hosted-clickhouse-1  Waiting
+ Container sentry-self-hosted-redis-1  Waiting
+ Container sentry-self-hosted-redis-1  Waiting
+ Container sentry-self-hosted-smtp-1  Started
+ Container sentry-self-hosted-symbolicator-1  Started
+ Container sentry-self-hosted-postgres-1  Started
+ Container sentry-self-hosted-redis-1  Healthy
+ Container sentry-self-hosted-redis-1  Healthy
+ Container sentry-self-hosted-kafka-1  Healthy
+ Container sentry-self-hosted-kafka-1  Healthy
+ Container sentry-self-hosted-redis-1  Healthy
+ Container sentry-self-hosted-clickhouse-1  Healthy
+ Container sentry-self-hosted-kafka-1  Healthy
+ Container sentry-self-hosted-redis-1  Healthy
+ Container sentry-self-hosted-clickhouse-1  Healthy
+ Container sentry-self-hosted-redis-1  Healthy
+ Container sentry-self-hosted-snuba-consumer-1  Starting
+ Container sentry-self-hosted-redis-1  Healthy
+ Container sentry-self-hosted-clickhouse-1  Healthy
+ Container sentry-self-hosted-snuba-outcomes-consumer-1  Starting
+ Container sentry-self-hosted-kafka-1  Healthy
+ Container sentry-self-hosted-redis-1  Healthy
+ Container sentry-self-hosted-clickhouse-1  Healthy
+ Container sentry-self-hosted-clickhouse-1  Healthy
+ Container sentry-self-hosted-kafka-1  Healthy
+ Container sentry-self-hosted-snuba-transactions-consumer-1  Starting
+ Container sentry-self-hosted-clickhouse-1  Healthy
+ Container sentry-self-hosted-kafka-1  Healthy
+ Container sentry-self-hosted-snuba-subscription-consumer-transactions-1  Starting
+ Container sentry-self-hosted-redis-1  Healthy
+ Container sentry-self-hosted-kafka-1  Healthy
+ Container sentry-self-hosted-snuba-subscription-consumer-events-1  Starting
+ Container sentry-self-hosted-clickhouse-1  Healthy
+ Container sentry-self-hosted-snuba-sessions-consumer-1  Starting
+ Container sentry-self-hosted-clickhouse-1  Healthy
+ Container sentry-self-hosted-snuba-api-1  Starting
+ Container sentry-self-hosted-kafka-1  Healthy
+ Container sentry-self-hosted-snuba-replacer-1  Starting
+ Container sentry-self-hosted-kafka-1  Healthy
+ Container sentry-self-hosted-vroom-1  Starting
+ Container sentry-self-hosted-snuba-subscription-consumer-events-1  Started
+ Container sentry-self-hosted-snuba-api-1  Started
+ Container sentry-self-hosted-snuba-consumer-1  Started
+ Container sentry-self-hosted-snuba-sessions-consumer-1  Started
+ Container sentry-self-hosted-snuba-replacer-1  Started
+ Container sentry-self-hosted-snuba-subscription-consumer-transactions-1  Started
+ Container sentry-self-hosted-vroom-1  Started
+ Container sentry-self-hosted-snuba-outcomes-consumer-1  Started
+ Container sentry-self-hosted-snuba-transactions-consumer-1  Started
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+Running migrations for default
+Operations to perform:
+  Apply all migrations: auth, contenttypes, feedback, hybridcloud, nodestore, replays, sentry, sessions, sites, social_auth
+Running migrations:
+  No migrations to apply.
+Creating missing DSNs
+Correcting Group.num_comments counter
+12:20:56 [INFO] sentry.outboxes: Executing outbox replication backfill
+12:20:56 [INFO] sentry.outboxes: Processing sentry.ControlOutboxs...
+12:20:56 [INFO] sentry.outboxes: Processing sentry.RegionOutboxs...
+12:20:56 [INFO] sentry.outboxes: done
+
+▶ Setting up GeoIP integration ...
+Setting up IP address geolocation ...
+IP address geolocation database already exists.
+IP address geolocation is not configured for updates.
+See https://develop.sentry.dev/self-hosted/geolocation/ for instructions.
+Error setting up IP address geolocation.
+
+
+-----------------------------------------------------------------
+
+You're all done! Run the following command to get Sentry running:
+
+  docker compose up -d
+
+-----------------------------------------------------------------
+
