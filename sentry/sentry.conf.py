@@ -43,11 +43,11 @@ INTERNAL_SYSTEM_IPS = (get_internal_network(),)
 DATABASES = {
     "default": {
         "ENGINE": "sentry.db.postgres",
-        "NAME": "postgres",
-        "USER": "postgres",
-        "PASSWORD": "",
-        "HOST": "postgres",
-        "PORT": "",
+        "NAME": env("SENTRY_DATABASE_NAME", "postgres"),
+        "USER": env("SENTRY_DATABASE_USER", "postgres"),
+        "PASSWORD": env("SENTRY_DATABASE_PASSWORD", ""),
+        "HOST": env("SENTRY_DATABASE_HOST", "postgres"),
+        "PORT": env("SENTRY_DATABASE_PORT", ""),
     }
 }
 
@@ -200,7 +200,7 @@ SENTRY_RELEASE_MONITOR = "sentry.release_health.release_monitor.metrics.MetricRe
 ##############
 
 SENTRY_WEB_HOST = "0.0.0.0"
-SENTRY_WEB_PORT = 9000
+SENTRY_WEB_PORT = 80
 SENTRY_WEB_OPTIONS = {
     "http": "%s:%s" % (SENTRY_WEB_HOST, SENTRY_WEB_PORT),
     "protocol": "uwsgi",
